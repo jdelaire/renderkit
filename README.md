@@ -35,6 +35,17 @@ VITE_PROXY_TOKEN=optional-shared-secret
 
 When the proxy is enabled, the app can generate without a browser key.
 
+## Cloudflare deploy (Wrangler assets)
+
+Build and deploy static assets with Wrangler:
+
+```
+npm run build
+npm run deploy
+```
+
+This uses `wrangler.jsonc` to deploy the `dist` directory.
+
 ## Security notes
 
 - Browser keys are inherently leakable (XSS, extensions, shared devices).

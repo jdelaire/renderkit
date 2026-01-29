@@ -28,3 +28,5 @@ Date: 2026-01-29
 - Hardened key handling: session storage by default, optional local storage, and removed env key injection from builds.
 - Added security headers template for Cloudflare Pages in `public/_headers`.
 - Fixed build-time TypeScript errors for provider status eta and resolution fallback.
+- Added `wrangler.jsonc` for static asset deployment via Wrangler (dist folder).
+- Added `npm run deploy` for Wrangler asset deploy and documented Cloudflare deploy steps.
