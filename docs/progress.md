@@ -27,3 +27,4 @@ Date: 2026-01-29
 - Added clear-history action for job history.
 - Hardened key handling: session storage by default, optional local storage, and removed env key injection from builds.
 - Added security headers template for Cloudflare Pages in `public/_headers`.
+- Fixed build-time TypeScript errors for provider status eta and resolution fallback.

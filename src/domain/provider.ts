@@ -11,6 +11,7 @@ export type ProviderJobStatus = {
   providerJobId: string;
   status: JobStatus;
   progress?: number;
+  etaSec?: number;
   outputs?: JobOutput[];
   error?: JobError;
 };

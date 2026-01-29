@@ -138,7 +138,10 @@ watch(modelId, () => {
     (resolution) => `${resolution.width}x${resolution.height}` === currentKey,
   );
   if (!match) {
-    store.setResolution(availableResolutions.value[0]);
+    const fallback = availableResolutions.value[0];
+    if (fallback) {
+      store.setResolution(fallback);
+    }
   }
 });
 
